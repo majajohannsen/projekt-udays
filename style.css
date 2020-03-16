@@ -30,12 +30,13 @@
 	#sidebar ul li {
 	    list-style: none;
 	    padding: 15px 15px;
-	    padding-top: 20%;
+	    padding-top: 25%;
 	}
 
 	#sidebar ul li a {
 	    color: #efefef;
 	    text-decoration: none;
+	    font-size: 20px;
 	}
 
 	#sidebar ul li:hover {
@@ -71,7 +72,6 @@
 	.flex-container > div {
 	    background-color: #f1f1f1;
 	    width: 100px;
-	    margin: 10px;
 	    text-align: center;
 	    line-height: 75px;
 	    font-size: 20px;
@@ -86,21 +86,52 @@
 	    margin: 10px;
 	}
 
+	#ikon1 {
+
+	    width: 7%;
+	}
+
+	#ikon2 {
+
+	    width: 7%;
+	}
+
+	#ikon3 {
+
+	    width: 7%;
+
+	}
+
+	input {
+
+	    opacity: 50%;
+	    padding-left: 30%;
+	    margin-left: 15%;
+
+	}
+
+	label {
+
+	    margin-left: 17%;
+	}
+
 	label,
 	input {
-	    margin-left: 4%;
 	    border-radius: 15px;
 	    font-size: 20px;
-	    opacity: 50%;
 	    color: #fff;
+
 	}
 
 	button {
-	    margin-left: 4%;
-	    padding: 6px;
+	    margin-left: 43%;
+	    padding: 7px;
 	    font-size: 15px;
 	    border-radius: 15px;
+	    opacity: 50%;
 	    background-color: white;
+
+
 	}
 
 	/* Customize the label (the container) */
@@ -133,6 +164,7 @@
 	    height: 25px;
 	    width: 25px;
 	    background-color: white;
+	    color: orange;
 	}
 
 	/* Create the checkmark/indicator (hidden when not checked) */
@@ -140,6 +172,7 @@
 	    content: "";
 	    position: absolute;
 	    display: none;
+
 	}
 
 	/* Show the checkmark when checked */
@@ -153,19 +186,21 @@
 	    top: 5px;
 	    width: 5px;
 	    height: 10px;
-	    border: solid black;
+	    border: solid orange;
 	    border-width: 0 3px 3px 0;
 	    -webkit-transform: rotate(45deg);
 	    -ms-transform: rotate(45deg);
 	    transform: rotate(45deg);
 	}
 
+
+
 	#springover {
-	    text-align: right;
-	    margin-left: 65%;
+	    text-align: center;
+	    margin-left: 36%;
 	    font-size: 17px;
 	    font-weight: bold;
-	    color: black;
+	    color: white;
 	}
 
 	/*MEDIA QUERY MOBILE */
