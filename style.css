@@ -12,7 +12,6 @@
 	.logo1 {
 	    width: 20%;
 	    padding-left: 80%;
-
 	}
 
 	#sidebar {
@@ -22,7 +21,6 @@
 	    height: 100%;
 	    left: -200px;
 	    transition: all 0.5s ease;
-
 	}
 
 	#sidebar.active {
@@ -63,7 +61,112 @@
 	    color: #fff;
 	}
 
+	/*Dine oplysninger*/
+	.flex-container {
+	    display: flex;
+	    flex-direction: column;
+	    padding: 10px;
+	}
 
+	.flex-container > div {
+	    background-color: #f1f1f1;
+	    width: 100px;
+	    margin: 10px;
+	    text-align: center;
+	    line-height: 75px;
+	    font-size: 20px;
+	    border-radius: 75px;
+	    border: 1px solid black;
+	    padding-left: 75px;
+	    padding-right: 75px;
+
+	}
+
+	#accepter {
+	    margin: 10px;
+	}
+
+	label,
+	input {
+	    margin-left: 4%;
+	    border-radius: 15px;
+	    font-size: 20px;
+	    opacity: 50%;
+	    color: #fff;
+	}
+
+	button {
+	    margin-left: 4%;
+	    padding: 6px;
+	    font-size: 15px;
+	    border-radius: 15px;
+	    background-color: white;
+	}
+
+	/* Customize the label (the container) */
+	.container {
+	    display: block;
+	    position: relative;
+	    padding-left: 30px;
+	    cursor: pointer;
+	    font-size: 17px;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	}
+
+	/* Hide the browser's default checkbox */
+	.container input {
+	    position: absolute;
+	    opacity: 0;
+	    cursor: pointer;
+	    height: 0;
+	    width: 0;
+	}
+
+	/* Create a custom checkbox */
+	.checkmark {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    height: 25px;
+	    width: 25px;
+	    background-color: white;
+	}
+
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.checkmark:after {
+	    content: "";
+	    position: absolute;
+	    display: none;
+	}
+
+	/* Show the checkmark when checked */
+	.container input:checked ~ .checkmark:after {
+	    display: block;
+	}
+
+	/* Style the checkmark/indicator */
+	.container .checkmark:after {
+	    left: 9px;
+	    top: 5px;
+	    width: 5px;
+	    height: 10px;
+	    border: solid black;
+	    border-width: 0 3px 3px 0;
+	    -webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	    transform: rotate(45deg);
+	}
+
+	#springover {
+	    text-align: right;
+	    margin-left: 65%;
+	    font-size: 17px;
+	    font-weight: bold;
+	    color: black;
+	}
 
 	/*MEDIA QUERY MOBILE */
 

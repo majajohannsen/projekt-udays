@@ -39,7 +39,28 @@
 
         <h1>Dine oplysninger</h1>
 
-
+        <div class="flex-container">
+            <form>
+                <fieldset>
+                    <legend> Oplysninger </legend> <br>
+                    <label for="navn">Navn:</label><br>
+                    <input type="text" id="navn"><br><br>
+                    <label for="adresse">Mail:</label><br>
+                    <input type="text" id="mail" list="adresseliste"><br><br>
+                    <label for="pb">Postnr &amp; By:</label><br>
+                    <input type="text" id="pb" list="pbliste"><br><br>
+                    <button type="button">Send</button><br>
+                </fieldset>
+            </form>
+            <datalist id="pbliste"></datalist>
+            <datalist id="adresseliste"></datalist>
+        </div>
+        <label class="container" id="accepter">
+            <input type="checkbox" checked="checked">
+            <p>Acceptér at vi bruger din persondata for målrettet at kunne hjælpe dig med dine studievalg og om du er blevet afklaret efter u-days, vi kontakter dig per mail og følger op. Vi beholder dine persondata i op til 6 måned.</p>
+            <span class="checkmark"></span>
+        </label>
+        <a href="lyther.html" id="springover">Spring dette over</a>
 
 
     </main>
