@@ -9,6 +9,9 @@
 	    background-color: #cccccc;
 	}
 
+	/*header, navigation & logo */
+
+
 	.logo1 {
 	    width: 20%;
 	    padding-left: 80%;
@@ -31,6 +34,7 @@
 	    list-style: none;
 	    padding: 15px 15px;
 	    padding-top: 25%;
+	    font-weight: bold;
 	}
 
 	#sidebar ul li a {
@@ -60,6 +64,62 @@
 	h1 {
 	    text-align: center;
 	    color: #fff;
+	}
+
+	/*forside*/
+	p {
+	    color: white;
+	    font-size: 18px;
+	    text-align: center;
+	}
+
+	ul#clickboks {
+	    display: grid;
+	    grid-template-columns: auto auto;
+	    grid-gap: 10px;
+	    list-style: none;
+	    position: relative;
+	    width: 90%;
+	    margin: auto;
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+	}
+
+	li {
+	    text-align: center;
+
+	}
+
+	.btn-styled {
+
+	    border-radius: 15px;
+	    background-color: white;
+	    opacity: 50%;
+	    margin-top: 15px;
+	    padding: 25px;
+	    font-size: 20px;
+	    font-family: serif;
+	    letter-spacing: 1.5px;
+	    transition: color .7s;
+	    transition: background-color .7s;
+	}
+
+	li.btn-styled {
+	    color: #D66016;
+	}
+
+	a {
+	    text-decoration: none;
+	}
+
+	.btn-styled:hover {
+	    color: orangered;
+	    background-color: deepskyblue;
+	    font-weight: bold;
+	}
+
+	.btn-styled:active {
+	    box-shadow: deepskyblue;
 	}
 
 	/*Dine oplysninger*/
@@ -186,6 +246,13 @@
 	    font-size: 17px;
 	    font-weight: bold;
 	    color: white;
+	}
+
+	.kort1 {
+
+	    width: 95%;
+	    margin-left: 12px;
+	    margin-top: 5%
 	}
 
 	/*MEDIA QUERY MOBILE */
