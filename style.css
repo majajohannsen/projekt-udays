@@ -67,6 +67,14 @@
 	    color: #fff;
 	}
 
+	/*pile*/
+
+	.pile {
+
+	    width: 10%;
+	    margin-left: 85%;
+	}
+
 	/*forside*/
 	p {
 	    color: white;
