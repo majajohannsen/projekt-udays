@@ -24,6 +24,7 @@
 	    height: 100%;
 	    left: -200px;
 	    transition: all 0.5s ease;
+
 	}
 
 	#sidebar.active {
@@ -32,7 +33,7 @@
 
 	#sidebar ul li {
 	    list-style: none;
-	    padding: 15px 15px;
+	    padding: 15px;
 	    padding-top: 25%;
 	    font-weight: bold;
 	}
@@ -40,7 +41,7 @@
 	#sidebar ul li a {
 	    color: #efefef;
 	    text-decoration: none;
-	    font-size: 20px;
+	    font-size: 22px;
 	}
 
 	#sidebar ul li:hover {
@@ -75,11 +76,11 @@
 
 	ul#clickboks {
 	    display: grid;
-	    grid-template-columns: auto auto;
-	    grid-gap: 10px;
+	    grid-template-columns: 171px 171px;
+	    grid-gap: 13px;
 	    list-style: none;
 	    position: relative;
-	    width: 90%;
+	    width: 95%;
 	    margin: auto;
 	    margin-top: 10px;
 	    margin-bottom: 10px;
@@ -92,11 +93,11 @@
 
 	.btn-styled {
 
-	    border-radius: 15px;
+	    border-radius: 40px;
 	    background-color: white;
 	    opacity: 50%;
 	    margin-top: 15px;
-	    padding: 25px;
+	    padding: 15px;
 	    font-size: 20px;
 	    font-family: serif;
 	    letter-spacing: 1.5px;
@@ -150,14 +151,14 @@
 	input {
 
 	    opacity: 50%;
-	    padding-left: 30%;
-	    margin-left: 15%;
+	    padding-left: 20%;
+	    margin-left: 10%;
 
 	}
 
 	label {
 
-	    margin-left: 17%;
+	    margin-left: 12%;
 	}
 
 	label,
@@ -210,6 +211,7 @@
 	    width: 25px;
 	    background-color: white;
 	    color: orange;
+	    margin-left: 18px
 	}
 
 	/* Create the checkmark/indicator (hidden when not checked) */
@@ -259,6 +261,70 @@
 	    margin: 50px;
 	}
 
+	.container2 {
+	    width: 100%;
+	    text-align: center;
+
+	}
+
+	.circle {
+	    stroke: #f8aa28;
+	    stroke-dasharray: 650;
+	    stroke-dashoffset: 650;
+	    -webkit-transition: all 0.5s ease-in-out;
+	    opacity: 0.3;
+	}
+
+	.playBut {
+	    /*  border: 1px solid red;*/
+	    display: inline-block;
+	    -webkit-transition: all 0.5s ease;
+	}
+
+	.playBut .triangle {
+	    -webkit-transition: all 0.7s ease-in-out;
+	    stroke-dasharray: 240;
+	    stroke-dashoffset: 480;
+	    stroke: white;
+	    transform: translateY(0);
+	}
+
+	.playBut:hover .triangle {
+	    stroke-dashoffset: 0;
+	    opacity: 1;
+	    stroke: #f8aa28;
+	    animation: nudge 0.7s ease-in-out;
+	}
+
+	@keyframes nudge {
+	    0% {
+	        transform: translateX(0);
+	    }
+
+	    30% {
+	        transform: translateX(-5px);
+	    }
+
+	    50% {
+	        transform: translateX(5px);
+	    }
+
+	    70% {
+	        transform: translateX(-2px);
+	    }
+
+	    100% {
+	        transform: translateX(0);
+	    }
+	}
+
+	.playBut:hover .circle {
+	    stroke-dashoffset: 0;
+	    opacity: 1;
+	}
+
+
+
 	/*MEDIA QUERY MOBILE */
 
-	@media all and (max-width: 599px) {
+	@media all and (max-width: 599px) {}
