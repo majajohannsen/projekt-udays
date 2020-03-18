@@ -36,6 +36,7 @@
 	    padding: 15px;
 	    padding-top: 25%;
 	    font-weight: bold;
+
 	}
 
 	#sidebar ul li a {
@@ -332,7 +333,12 @@ Customize the label (the container) */
 	    opacity: 1;
 	}
 
+	#play {
 
+	    color: #fff;
+	    text-align: center;
+	}
+	}
 
 	/*MEDIA QUERY MOBILE */
 
