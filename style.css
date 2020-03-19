@@ -6,7 +6,6 @@
 
 	body {
 	    background-image: url("images/baggrund.jpg");
-	    background-color: #cccccc;
 	}
 
 	/*header, navigation & logo */
@@ -23,8 +22,8 @@
 	    width: 200px;
 	    height: 100%;
 	    left: -200px;
-	    transition: all 0.5s ease;
-
+	    transition: all 0.20s ease;
+	    z-index: 2;
 	}
 
 	#sidebar.active {
@@ -40,7 +39,7 @@
 	}
 
 	#sidebar ul li a {
-	    color: #efefef;
+	    color: #fff;
 	    text-decoration: none;
 	    font-size: 22px;
 	}
