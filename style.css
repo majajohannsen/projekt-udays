@@ -152,7 +152,6 @@ a {
     flex-direction: column;
     padding: 10px;
     padding-right: 12%;
-
 }
 
 form {
@@ -191,7 +190,6 @@ input {
 }
 
 button {
-
     padding: 7px;
     margin-left: 30%;
     font-size: 23px;
@@ -365,6 +363,821 @@ Customize the label (the container) */
 .valgt {
     background-color: #189ad3;
     color: white;
+}
+
+//*Fodspor - Inspiration fra: https://codepen.io/PortSpasy/pen/mdbXYXo*//
+.ajax-loader,
+.ajax-loader2,
+.ajax-loader3,
+.ajax-loader4 {
+    position: absolute;
+    transform-origin: 50% 50%;
+    width: 200px;
+}
+
+.ajax-loader .paw,
+.ajax-loader2 .paw,
+.ajax-loader3 .paw,
+.ajax-loader4 .paw {
+    width: 80px;
+    height: 44px;
+    animation: 2890ms pawAnimation ease-in-out infinite;
+}
+
+.ajax-loader .paw svg,
+.ajax-loader2 .paw svg,
+.ajax-loader3 .paw svg,
+.ajax-loader4 .paw svg {
+    width: 100%;
+    height: 100%;
+}
+
+.ajax-loader .paw:nth-child(odd),
+.ajax-loader2 .paw:nth-child(odd),
+.ajax-loader3 .paw:nth-child(odd),
+.ajax-loader4 .paw:nth-child(odd) {
+    transform: rotate(0deg);
+}
+
+.ajax-loader .paw:nth-child(even),
+.ajax-loader2 .paw:nth-child(even),
+.ajax-loader3 .paw:nth-child(even),
+.ajax-loader4 .paw:nth-child(even) {
+    transform: rotate(0deg) scaleX(-1) translate(15%, -50%);
+}
+
+.ajax-loader .paw:nth-child(1),
+.ajax-loader2 .paw:nth-child(1),
+.ajax-loader3 .paw:nth-child(1),
+.ajax-loader4 .paw:nth-child(1) {
+    animation-delay: 2.40s;
+    transform: rotate(0deg) translate3d(-4%, -48%, 0);
+}
+
+.ajax-loader .paw:nth-child(1),
+.ajax-loader2 .paw:nth-child(1),
+.ajax-loader3 .paw:nth-child(1),
+.ajax-loader4 .paw:nth-child(1) {
+    animation-delay: 2.25s;
+    transform: rotate(-8deg) translate3d(30%, -50%, 0);
+}
+
+.ajax-loader .paw:nth-child(2),
+.ajax-loader2 .paw:nth-child(2),
+.ajax-loader3 .paw:nth-child(2),
+.ajax-loader4 .paw:nth-child(2) {
+    animation-delay: 2s;
+    transform: rotate(0deg) scaleX(-1) translate3d(10%, -100%, 0);
+}
+
+.ajax-loader .paw:nth-child(2),
+.ajax-loader2 .paw:nth-child(2),
+.ajax-loader3 .paw:nth-child(2),
+.ajax-loader4 .paw:nth-child(2) {
+    animation-delay: 2s;
+    transform: rotate(-8deg) scaleX(-1) translate3d(-30%, -120%, 0);
+}
+
+.ajax-loader .paw:nth-child(3),
+.ajax-loader2 .paw:nth-child(3),
+.ajax-loader3 .paw:nth-child(3),
+.ajax-loader4 .paw:nth-child(3) {
+    animation-delay: 1.75s;
+    transform: rotate(0deg) translate3d(-12%, -144%, 0);
+}
+
+.ajax-loader .paw:nth-child(3),
+.ajax-loader2 .paw:nth-child(3),
+.ajax-loader3 .paw:nth-child(3),
+.ajax-loader4 .paw:nth-child(3) {
+    animation-delay: 1.75s;
+    transform: rotate(0deg) translate3d(45%, -144%, 0);
+}
+
+.ajax-loader .paw:nth-child(4),
+.ajax-loader2 .paw:nth-child(4),
+.ajax-loader3 .paw:nth-child(4),
+.ajax-loader4 .paw:nth-child(4) {
+    animation-delay: 1.5s;
+    transform: rotate(0deg) scaleX(-1) translate3d(20%, -200%, 0);
+}
+
+.ajax-loader .paw:nth-child(4),
+.ajax-loader2 .paw:nth-child(4),
+.ajax-loader3 .paw:nth-child(4),
+.ajax-loader4 .paw:nth-child(4) {
+    animation-delay: 1.5s;
+    transform: rotate(0deg) scaleX(-1) translate3d(-32%, -200%, 0);
+}
+
+.ajax-loader .paw:nth-child(5),
+.ajax-loader2 .paw:nth-child(5),
+.ajax-loader3 .paw:nth-child(5),
+.ajax-loader4 .paw:nth-child(5) {
+    animation-delay: 1.25s;
+    transform: rotate(0deg) translate3d(-20%, -240%, 0);
+}
+
+.ajax-loader .paw:nth-child(5),
+.ajax-loader2 .paw:nth-child(5),
+.ajax-loader3 .paw:nth-child(5),
+.ajax-loader4 .paw:nth-child(5) {
+    animation-delay: 1.25s;
+    transform: rotate(0deg) translate3d(40%, -240%, 0);
+}
+
+.ajax-loader .paw:nth-child(6),
+.ajax-loader2 .paw:nth-child(6),
+.ajax-loader3 .paw:nth-child(6),
+.ajax-loader4 .paw:nth-child(6) {
+    animation-delay: 1s;
+    transform: rotate(0deg) scaleX(-1) translate3d(30%, -300%, 0);
+}
+
+.ajax-loader .paw:nth-child(6),
+.ajax-loader2 .paw:nth-child(6),
+.ajax-loader3 .paw:nth-child(6),
+.ajax-loader4 .paw:nth-child(6) {
+    animation-delay: 1s;
+    transform: rotate(0deg) scaleX(-1) translate3d(-30%, -300%, 0);
+}
+
+.ajax-loader .paw:nth-child(7),
+.ajax-loader2 .paw:nth-child(7),
+.ajax-loader3 .paw:nth-child(7),
+.ajax-loader4 .paw:nth-child(7) {
+    animation-delay: 0.75s;
+    transform: rotate(0deg) translate3d(-28%, -336%, 0);
+}
+
+.ajax-loader .paw:nth-child(7),
+.ajax-loader2 .paw:nth-child(7),
+.ajax-loader3 .paw:nth-child(7),
+.ajax-loader4 .paw:nth-child(7) {
+    animation-delay: 0.75s;
+    transform: rotate(1deg) translate3d(7%, -336%, 0);
+}
+
+.ajax-loader .paw:nth-child(8),
+.ajax-loader2 .paw:nth-child(8),
+.ajax-loader3 .paw:nth-child(8),
+.ajax-loader4 .paw:nth-child(8) {
+    animation-delay: 0.5s;
+    transform: rotate(0deg) scaleX(-1) translate3d(40%, -400%, 0);
+}
+
+.no-cssanimations .ajax-loader .paw,
+.no-cssanimations .ajax-loader2 .paw,
+.no-cssanimations .ajax-loader3 .paw,
+.no-cssanimations .ajax-loader4 .paw {
+    opacity: 1;
+}
+
+.ajax-loader {
+    top: 40%;
+    left: 42%;
+    transform: rotate(10deg) translate(-50%, 0%);
+}
+
+.ajax-loader2 {
+    top: 45%;
+    right: 50%;
+    transform: rotate(-10deg) translate(-50%, 0%);
+}
+
+.ajax-loader3 {
+    top: 45%;
+    left: 30%;
+    transform: rotate(150deg) translate(-50%, 0%);
+}
+
+.ajax-loader4 {
+    top: 45%;
+    right: 35%;
+    transform: rotate(200deg) translate(-50%, 0%);
+}
+
+@keyframes pawAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes path1 {
+    0% {
+        transform: rotate(0deg) scaleX(-1) translate3d(0%, -50%, 0);
+    }
+
+    30% {
+        transform: rotate(20deg) scaleX(-1) translate3d(-35%, -60%, 0);
+    }
+
+    100% {
+        transform: rotate(20deg) scaleX(-1) translate3d(0%, -80%, 0);
+    }
+}
+
+/*MEDIA QUERY MOBILE */
+@media all and (max-width: 599px) {
+    #sidebar ul li:hover {
+        background: #189ad3;
+    }
+}
+
+der sker intet hmm skulle der komme fødder inde i kortet? Sofie Jeps.. ingen fødder Sofie Vent lige. Tror jeg har fundet fejlen CSS Sofie * {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Crimson Text', serif;
+}
+
+body {
+    background-image: url("images/baggrund.jpg");
+}
+
+/*header, navigation & logo */
+/*Sidebar = https://codepen.io/abdulsamad6346/pen/jzKWLm?__cf_chl_captcha_tk__=d59db884c0e05febd4ee2803083fe38fce56c523-1584361259-0-AWVXzriaI-1V6iDjJrO8yOt_Y_00x1Wj0WZUaixPOWMlwr8f26JM967osanwrY_4Qk1p33asu_oo8lhYIsW3xat4xt-NlEhjKx0uJufaB2Thz8JBu9Tl2xYgaJuhEWQvsGEF3GYsjJw55nuI3CqO59Ntuz7Foiw1tAZ8hKs-E2EL2EpaDKMbqV5jsl_01V5REHywx3Dzs_PI91t7fU9D3oUzkyiK_SZhq-s-DrIGHEficQvm0zWH9ik1XJ0j3wzjceFtZu3WAAm4b3N9ZyIZKam4adqr08NVLyeV4Ih9AwlapC05dXkBFymEBBcrTRlWzF7lJdZc5QjL4xVIlQrAZyvuokfxPbez0SB29Vk-AKRu29LWQwxDcskYYb9oj8B5wYrSYmIw5CcCMppxbzxiyLapuPDcZjm6FEEqKnkhgB8tvKz8f2ExbcQvMPo0M9vHZlihoX6knvJs6WqU_mwXJ1E */
+.logo1 {
+    width: 20%;
+    padding-left: 80%;
+}
+
+#sidebar {
+    position: fixed;
+    background: #68B5C1;
+    width: 200px;
+    height: 100%;
+    left: -200px;
+    transition: all 0.20s ease;
+    z-index: 2;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar ul li {
+    list-style: none;
+    padding: 15px;
+    padding-top: 25%;
+    font-weight: bold;
+}
+
+#sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+#sidebar ul li:hover {
+    background: #189ad3;
+}
+
+#sidebar .toggle_btns {
+    position: absolute;
+    left: 230px;
+    top: 30px;
+}
+
+.toggle_btns span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #fff;
+    margin: 3px 0px;
+}
+
+/*Uddanelsesmatch undersider */
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+h4 {
+    text-align: center;
+    color: #fff;
+}
+
+.multi {
+    width: 85%;
+    margin-left: 37px;
+}
+
+.it {
+    width: 80%;
+    margin-left: 37px;
+}
+
+.marked {
+    width: 86%;
+    margin-left: 32px;
+}
+
+/*pile*/
+.pile {
+    width: 14%;
+    margin-left: 83%
+}
+
+/*forside*/
+p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+ul#clickboks {
+    display: grid;
+    grid-template-columns: 171px 171px;
+    grid-gap: 13px;
+    list-style: none;
+    position: relative;
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li {
+    text-align: center;
+}
+
+.btn-styled {
+    border-radius: 40px;
+    background-color: white;
+    opacity: 50%;
+    margin-top: 15px;
+    padding: 15px;
+    font-size: 20px;
+    font-family: serif;
+    letter-spacing: 1.5px;
+    transition: color .7s;
+    transition: background-color .7s;
+}
+
+li.btn-styled {
+    color: #D66016;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-styled:hover {
+    color: orangered;
+    background-color: deepskyblue;
+    font-weight: bold;
+}
+
+.btn-styled:active {
+    box-shadow: deepskyblue;
+}
+
+/*Dine oplysninger*/
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-right: 12%;
+}
+
+form {
+    margin-left: 25%;
+}
+
+#accepter {
+    margin: 10px;
+}
+
+input#navn {
+    opacity: 50%;
+    color: #D66016;
+}
+
+input#mail {
+    opacity: 50%;
+    color: #D66016;
+}
+
+input#pb {
+    opacity: 50%;
+    color: #D66016;
+}
+
+label {
+    margin-left: 12%;
+}
+
+label,
+input {
+    border-radius: 15px;
+    font-size: 20px;
+    color: #fff;
+    margin-left: 3px;
+}
+
+button {
+    padding: 7px;
+    margin-left: 30%;
+    font-size: 23px;
+    border-radius: 15px;
+    opacity: 50%;
+    background-color: white;
+    color: #D66016
+}
+
+/*
+Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    color: orange;
+    margin-left: 18px
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid orange;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#springover {
+    text-align: center;
+    margin-left: 30%;
+    font-size: 22px;
+    color: white;
+    ;
+}
+
+#mere {
+    text-align: center;
+    margin-left: 17%;
+    font-size: 22px;
+    color: white;
+}
+
+.kort1 {
+    width: 95%;
+    margin-left: 12px;
+    margin-top: 5%
+}
+
+#podwalk {
+    margin: 50px;
+}
+
+.container2 {
+    width: 100%;
+    text-align: center;
+}
+
+.circle {
+    stroke: #f8aa28;
+    stroke-dasharray: 650;
+    stroke-dashoffset: 650;
+    -webkit-transition: all 0.5s ease-in-out;
+    opacity: 0.3;
+}
+
+.playBut {
+    /*  border: 1px solid red;*/
+    display: inline-block;
+    -webkit-transition: all 0.5s ease;
+}
+
+.playBut .triangle {
+    -webkit-transition: all 0.7s ease-in-out;
+    stroke-dasharray: 240;
+    stroke-dashoffset: 480;
+    stroke: white;
+    transform: translateY(0);
+}
+
+.playBut:hover .triangle {
+    stroke-dashoffset: 0;
+    opacity: 1;
+    stroke: #f8aa28;
+    animation: nudge 0.7s ease-in-out;
+}
+
+@keyframes nudge {
+    0% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    70% {
+        transform: translateX(-2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.playBut:hover .circle {
+    stroke-dashoffset: 0;
+    opacity: 1;
+}
+
+#play {
+    color: #fff;
+    text-align: center;
+}
+
+.valgbar {
+    cursor: pointer;
+}
+
+.li-element {
+    margin-bottom: 15px;
+    list-style: none;
+    background-color: #189ad3;
+}
+
+.valgt {
+    background-color: #189ad3;
+    color: white;
+}
+
+/*fødder*/
+
+.ajax-loader,
+.ajax-loader2,
+.ajax-loader3,
+.ajax-loader4 {
+    position: absolute;
+    transform-origin: 50% 50%;
+    width: 200px;
+}
+
+.ajax-loader .paw,
+.ajax-loader2 .paw,
+.ajax-loader3 .paw,
+.ajax-loader4 .paw {
+    width: 80px;
+    height: 44px;
+    animation: 2890ms pawAnimation ease-in-out infinite;
+}
+
+.ajax-loader .paw svg,
+.ajax-loader2 .paw svg,
+.ajax-loader3 .paw svg,
+.ajax-loader4 .paw svg {
+    width: 100%;
+    height: 100%;
+}
+
+.ajax-loader .paw:nth-child(odd),
+.ajax-loader2 .paw:nth-child(odd),
+.ajax-loader3 .paw:nth-child(odd),
+.ajax-loader4 .paw:nth-child(odd) {
+    transform: rotate(0deg);
+}
+
+.ajax-loader .paw:nth-child(even),
+.ajax-loader2 .paw:nth-child(even),
+.ajax-loader3 .paw:nth-child(even),
+.ajax-loader4 .paw:nth-child(even) {
+    transform: rotate(0deg) scaleX(-1) translate(15%, -50%);
+}
+
+.ajax-loader .paw:nth-child(1),
+.ajax-loader2 .paw:nth-child(1),
+.ajax-loader3 .paw:nth-child(1),
+.ajax-loader4 .paw:nth-child(1) {
+    animation-delay: 2.40s;
+    transform: rotate(0deg) translate3d(-4%, -48%, 0);
+}
+
+.ajax-loader .paw:nth-child(1),
+.ajax-loader2 .paw:nth-child(1),
+.ajax-loader3 .paw:nth-child(1),
+.ajax-loader4 .paw:nth-child(1) {
+    animation-delay: 2.25s;
+    transform: rotate(-8deg) translate3d(30%, -50%, 0);
+}
+
+.ajax-loader .paw:nth-child(2),
+.ajax-loader2 .paw:nth-child(2),
+.ajax-loader3 .paw:nth-child(2),
+.ajax-loader4 .paw:nth-child(2) {
+    animation-delay: 2s;
+    transform: rotate(0deg) scaleX(-1) translate3d(10%, -100%, 0);
+}
+
+.ajax-loader .paw:nth-child(2),
+.ajax-loader2 .paw:nth-child(2),
+.ajax-loader3 .paw:nth-child(2),
+.ajax-loader4 .paw:nth-child(2) {
+    animation-delay: 2s;
+    transform: rotate(-8deg) scaleX(-1) translate3d(-30%, -120%, 0);
+}
+
+.ajax-loader .paw:nth-child(3),
+.ajax-loader2 .paw:nth-child(3),
+.ajax-loader3 .paw:nth-child(3),
+.ajax-loader4 .paw:nth-child(3) {
+    animation-delay: 1.75s;
+    transform: rotate(0deg) translate3d(-12%, -144%, 0);
+}
+
+.ajax-loader .paw:nth-child(3),
+.ajax-loader2 .paw:nth-child(3),
+.ajax-loader3 .paw:nth-child(3),
+.ajax-loader4 .paw:nth-child(3) {
+    animation-delay: 1.75s;
+    transform: rotate(0deg) translate3d(45%, -144%, 0);
+}
+
+.ajax-loader .paw:nth-child(4),
+.ajax-loader2 .paw:nth-child(4),
+.ajax-loader3 .paw:nth-child(4),
+.ajax-loader4 .paw:nth-child(4) {
+    animation-delay: 1.5s;
+    transform: rotate(0deg) scaleX(-1) translate3d(20%, -200%, 0);
+}
+
+.ajax-loader .paw:nth-child(4),
+.ajax-loader2 .paw:nth-child(4),
+.ajax-loader3 .paw:nth-child(4),
+.ajax-loader4 .paw:nth-child(4) {
+    animation-delay: 1.5s;
+    transform: rotate(0deg) scaleX(-1) translate3d(-32%, -200%, 0);
+}
+
+.ajax-loader .paw:nth-child(5),
+.ajax-loader2 .paw:nth-child(5),
+.ajax-loader3 .paw:nth-child(5),
+.ajax-loader4 .paw:nth-child(5) {
+    animation-delay: 1.25s;
+    transform: rotate(0deg) translate3d(-20%, -240%, 0);
+}
+
+.ajax-loader .paw:nth-child(5),
+.ajax-loader2 .paw:nth-child(5),
+.ajax-loader3 .paw:nth-child(5),
+.ajax-loader4 .paw:nth-child(5) {
+    animation-delay: 1.25s;
+    transform: rotate(0deg) translate3d(40%, -240%, 0);
+}
+
+.ajax-loader .paw:nth-child(6),
+.ajax-loader2 .paw:nth-child(6),
+.ajax-loader3 .paw:nth-child(6),
+.ajax-loader4 .paw:nth-child(6) {
+    animation-delay: 1s;
+    transform: rotate(0deg) scaleX(-1) translate3d(30%, -300%, 0);
+}
+
+.ajax-loader .paw:nth-child(6),
+.ajax-loader2 .paw:nth-child(6),
+.ajax-loader3 .paw:nth-child(6),
+.ajax-loader4 .paw:nth-child(6) {
+    animation-delay: 1s;
+    transform: rotate(0deg) scaleX(-1) translate3d(-30%, -300%, 0);
+}
+
+.ajax-loader .paw:nth-child(7),
+.ajax-loader2 .paw:nth-child(7),
+.ajax-loader3 .paw:nth-child(7),
+.ajax-loader4 .paw:nth-child(7) {
+    animation-delay: 0.75s;
+    transform: rotate(0deg) translate3d(-28%, -336%, 0);
+}
+
+.ajax-loader .paw:nth-child(7),
+.ajax-loader2 .paw:nth-child(7),
+.ajax-loader3 .paw:nth-child(7),
+.ajax-loader4 .paw:nth-child(7) {
+    animation-delay: 0.75s;
+    transform: rotate(1deg) translate3d(7%, -336%, 0);
+}
+
+.ajax-loader .paw:nth-child(8),
+.ajax-loader2 .paw:nth-child(8),
+.ajax-loader3 .paw:nth-child(8),
+.ajax-loader4 .paw:nth-child(8) {
+    animation-delay: 0.5s;
+    transform: rotate(0deg) scaleX(-1) translate3d(40%, -400%, 0);
+}
+
+.no-cssanimations .ajax-loader .paw,
+.no-cssanimations .ajax-loader2 .paw,
+.no-cssanimations .ajax-loader3 .paw,
+.no-cssanimations .ajax-loader4 .paw {
+    opacity: 1;
+}
+
+.ajax-loader {
+    top: 40%;
+    left: 42%;
+    transform: rotate(10deg) translate(-50%, 0%);
+}
+
+.ajax-loader2 {
+    top: 45%;
+    right: 50%;
+    transform: rotate(-10deg) translate(-50%, 0%);
+}
+
+.ajax-loader3 {
+    top: 45%;
+    left: 30%;
+    transform: rotate(150deg) translate(-50%, 0%);
+}
+
+.ajax-loader4 {
+    top: 45%;
+    right: 35%;
+    transform: rotate(200deg) translate(-50%, 0%);
+}
+
+@keyframes pawAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes path1 {
+    0% {
+        transform: rotate(0deg) scaleX(-1) translate3d(0%, -50%, 0);
+    }
+
+    30% {
+        transform: rotate(20deg) scaleX(-1) translate3d(-35%, -60%, 0);
+    }
+
+    100% {
+        transform: rotate(20deg) scaleX(-1) translate3d(0%, -80%, 0);
+    }
 }
 
 /*MEDIA QUERY MOBILE */
