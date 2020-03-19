@@ -151,6 +151,8 @@ a {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    padding-right: 7%;
+
 }
 
 form {
@@ -191,7 +193,7 @@ input {
 button {
     margin-left: 28%;
     padding: 7px;
-    font-size: 15px;
+    font-size: 20px;
     border-radius: 15px;
     opacity: 50%;
     background-color: white;
