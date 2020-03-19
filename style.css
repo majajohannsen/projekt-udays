@@ -71,9 +71,8 @@
 	/*pile*/
 
 	.pile {
-
-	    width: 10%;
-	    margin-left: 85%;
+	    width: 14%;
+	    margin-left: 85%
 	}
 
 	/*forside*/
@@ -342,4 +341,9 @@ Customize the label (the container) */
 
 	/*MEDIA QUERY MOBILE */
 
-	@media all and (max-width: 599px) {}
+	@media all and (max-width: 599px) {
+
+	    #sidebar ul li:hover {
+	        background: #189ad3;
+	    }
+	}
