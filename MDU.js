@@ -143,7 +143,7 @@ document.getElementById("fortsaet").addEventListener("click", function (e) {
     console.log(antalValgt);
     if (antalValgt === 3) {
         if (interesseListe.includes("IT") && interesseListe.includes("Økonomi")) {
-            location.href = "oekonomiogit";
+            location.href = "oekonomiogit.html";
         } else if (interesseListe.includes("Kreativ") && interesseListe.includes("Kommunikation")) {
             location.href = "multimedie.html";
         }
@@ -198,4 +198,4 @@ document.getElementById("fortsaet").addEventListener("click", function (e) {
     } else {
         alert("Du skal vælge 3 interesser!");
     }
-});
+})
