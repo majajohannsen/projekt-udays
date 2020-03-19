@@ -151,7 +151,7 @@ a {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    padding-right: 25%;
+    padding-right: 12%;
 
 }
 
@@ -191,9 +191,10 @@ input {
 }
 
 button {
-    margin-left: 28%;
+
     padding: 7px;
-    font-size: 20px;
+    margin-left: 30%;
+    font-size: 23px;
     border-radius: 15px;
     opacity: 50%;
     background-color: white;
