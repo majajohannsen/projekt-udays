@@ -9,7 +9,7 @@
 	}
 
 	/*header, navigation & logo */
-
+	/*Sidebar = https://codepen.io/abdulsamad6346/pen/jzKWLm?__cf_chl_captcha_tk__=d59db884c0e05febd4ee2803083fe38fce56c523-1584361259-0-AWVXzriaI-1V6iDjJrO8yOt_Y_00x1Wj0WZUaixPOWMlwr8f26JM967osanwrY_4Qk1p33asu_oo8lhYIsW3xat4xt-NlEhjKx0uJufaB2Thz8JBu9Tl2xYgaJuhEWQvsGEF3GYsjJw55nuI3CqO59Ntuz7Foiw1tAZ8hKs-E2EL2EpaDKMbqV5jsl_01V5REHywx3Dzs_PI91t7fU9D3oUzkyiK_SZhq-s-DrIGHEficQvm0zWH9ik1XJ0j3wzjceFtZu3WAAm4b3N9ZyIZKam4adqr08NVLyeV4Ih9AwlapC05dXkBFymEBBcrTRlWzF7lJdZc5QjL4xVIlQrAZyvuokfxPbez0SB29Vk-AKRu29LWQwxDcskYYb9oj8B5wYrSYmIw5CcCMppxbzxiyLapuPDcZjm6FEEqKnkhgB8tvKz8f2ExbcQvMPo0M9vHZlihoX6knvJs6WqU_mwXJ1E */
 
 	.logo1 {
 	    width: 20%;
@@ -62,9 +62,32 @@
 	    margin: 3px 0px;
 	}
 
+	/*Uddanelsesmatch undersider */
 	h1 {
 	    text-align: center;
 	    color: #fff;
+	}
+
+	h4 {
+
+	    text-align: center;
+	    color: #fff;
+	}
+
+	.multi {
+
+	    width: 86%;
+	    margin-left: 19px;
+	}
+
+	.it {
+	    width: 100%;
+	}
+
+	.marked {
+
+	    width: 86%;
+	    margin-left: 32px;
 	}
 
 	/*pile*/
