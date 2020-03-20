@@ -87,7 +87,7 @@ h4 {
 }
 
 /*pile*/
-.rightpile {
+.rightpil {
     width: 14%;
     margin-left: 83%
 }
@@ -285,7 +285,6 @@ Customize the label (the container) */
     width: 95%;
     margin-left: 12px;
     margin-top: 5%;
-    z-index: 2;
 }
 
 #podwalk {
@@ -374,6 +373,12 @@ Customize the label (the container) */
 }
 
 /*fødder*/
+
+#svg-sprite {
+
+    width: 0px;
+    height: 0px;
+}
 
 .ajax-loader,
 .ajax-loader2,
