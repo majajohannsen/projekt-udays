@@ -208,6 +208,13 @@ button {
 
 /*
 Customize the label (the container) */
+
+p#podwalktekst {
+
+    margin: 14px;
+    text-align: left;
+}
+
 .container {
     display: block;
     position: relative;
