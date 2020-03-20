@@ -14,7 +14,7 @@ fetch("https://dawa.aws.dk/postnumre")
         }
     })
 
-const lydobjektet = new Audio("intro.mp4");
+const lydobjektet = new Audio("intro.mp3");
 
 
 document.getElementById("playBut").addEventListener("click", function () {
